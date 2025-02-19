@@ -1,38 +1,120 @@
 .App {
-  text-align: center;
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+.logo img{
+  height: 60px;
+  width: 60px;
+  margin: 20px;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #1a1c20;
+  flex: 32%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+ 
+.input-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: -52px;
+  gap: 10px;
+}
+
+.input-container input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.input-container button{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100px;
+  background-color: #282c34;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container button:hover{
+  background-color: #1a1c20;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoDisplay{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  flex: 68%;
+  align-items: center;
+}
+
+.task{
+  background-color: white;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  width: 30%;
+  border-bottom: solid 3px #1a1c20;
+  border-radius: 5px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.content span{
+  gap: 10px;
+}
+
+.content img{
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.buttons{
+  color: white;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button{
+  background-color: #424752;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover{
+  background-color: #1a1c20;
+}
+
+
+
+.buttons img{
+  width: 30px;
+  height: 30px;
 }
